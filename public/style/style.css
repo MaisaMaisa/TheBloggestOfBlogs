@@ -1,0 +1,114 @@
+.maintxt, .containerrow, .error {
+  height:150px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  padding: 15px;
+  display: inline-block;
+}
+
+#moo, #content, .fillin {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: red;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 40px;
+  color: blue;
+  display: block;
+  transition: 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.2s;
+  padding: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: blue;
+  
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.logform, .regform { 
+  width: 260px;
+  margin-left: 10px;
+  margin-top: 150px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.2), 0 1px 1px rgba(255, 255, 255, 0.2);
+  -webkit-transition: box-shadow 0.5s ease;
+  -moz-transition: box-shadow 0.5s ease;
+  -o-transition: box-shadow 0.5s ease;
+  -ms-transition: box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease;
+  float: right;
+  bottom: 50px;
+}
+.logform:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
+
+.btn{
+  background: transparent;
+  text-align: center;
+  border: solid 2px #fff;
+  margin:25px 15px 0;
+  width: 200px;
+  color:#fff;
+  line-height: 25px;
+  border-radius:20px 20px 20px 20px;
+  
+}
+}
+}
+}
+
+/* #fun {
+  border: 5px;
+  padding: 8px 8px 8px 32px;
+  font-size: 100px;
+  color: blue;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+.myposts {
+  display: inline;
+  font-size: 50px;
+}

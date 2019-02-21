@@ -1,0 +1,51 @@
+<% include ./partials/header%>
+<% include ./partials/navbar%>
+<div class="container row">
+    <h1 id= "yoo">Here are all the posts:</h1>
+        <ul>
+<!--             <%if (locals.comment === undefined) { %> -->
+                <%if (content.length > 0) { %>
+                    <% for(let input of content) { %>
+                        <div>
+                            <h3>Title:
+                                <%=input.title%>
+                            </h3>
+                
+                            <h3>Message/post:
+                                <p style="color:blue">
+                                <%=input.post%>
+                               </p>
+                            </h3>   
+                            <form id= "addcom" action="/allposts" method="post">
+                                <input type="hidden" name="postId" value="<%=input.id%>">
+                                <input id="inputForm" type='text' placeholder='Write a comment' name='Body'>
+                                <input id="sad" type="submit" value="Post comment"/>
+                            </form>
+
+                            <h3>Comments:
+                                <p style="color:red">
+                                    <% for(let comment of input.comments) { %>
+                                        <%- JSON.stringify(comment.body) %>
+                    
+                                    <% } %>
+                                </p>
+                            </h3>   
+                        </div>
+                        <br><br>
+                    <% } %>
+                <% } %>
+        
+                <%if (content.length == 0) { %>
+                <p>
+                    Emptiness
+                </p>
+                <% } %>
+               
+<!--             <% } else { %>
+                    <h1> comment
+                        <%=comment.body%>
+                    </h1>
+                <% } %> -->
+        </ul>
+
+<% include ./partials/footer%>

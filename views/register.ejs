@@ -1,0 +1,24 @@
+<% include ./partials/header%>
+<% include ./partials/navbar%>
+
+    <div class="regform">
+        <form action="/register" method="post">
+            <div>
+                <label>Name:</label>
+                <input type="text" name="user" />
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="text" name="email" />
+            </div>
+            <div>
+                <label>Pass:</label>
+                <input type="password" name="pass" />
+            </div>
+            <div>
+                <input class="btn" type="submit" value="Sign Up" />
+            </div>
+        </form>
+    </div>
+
+<% include ./partials/footer%>

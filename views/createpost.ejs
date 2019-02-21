@@ -1,0 +1,20 @@
+<% include ./partials/header%>
+<% include ./partials/navbar%>
+<div class="container row">
+    <div class="fillin">
+        <form action="/createpost" method="post">
+                <label style="font-size: 50px;">Title of your message: </label> <br>
+                <input type="text" name="title" size="200px"/>
+                <br>
+                <br>
+                <label style="font-size: 50px;">Message: </label><br>
+                <input type="text" name="post" size="200px"/>
+                <br>
+                <br>
+            
+                <input style="color:blue" class="submission" type="submit" value="send through"/>
+        </form>
+    </div>
+</div>
+
+<% include ./partials/footer%>

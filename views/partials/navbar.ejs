@@ -1,0 +1,26 @@
+    <div id="mySidenav" class="sidenav">
+        
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="/register">Reggie first,</a>
+                <a href="/login">or Log,</a>
+                <a href="/logout">or or Logouttie</a>
+                <a href="/myposts">My Posts</a>
+                <a href="/allposts">All Posts</a>
+                <a href="/loggeduser">Profile</a>
+    </div>
+ 
+    <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
+    </div>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "350px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
